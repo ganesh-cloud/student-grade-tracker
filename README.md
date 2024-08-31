@@ -35,3 +35,9 @@ While Python primarily handles backend tasks,FrameWorks like Bootstrap can help 
 2.Testing:
 
 unittest or pytest:Frameworks for writing and running tests to ensure code readability
+
+
+
+<img width="960" alt="task 2 screenshot" src="https://github.com/user-attachments/assets/882aaa1b-c6ef-4b3d-9a9a-a0296c7e66c5">
+
+
