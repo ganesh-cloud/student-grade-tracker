@@ -24,6 +24,6 @@ main(): The main loop that allows the user to input data for multiple students. 
 
 
 
-<img width="960" alt="task 2 screenshot" src="https://github.com/user-attachments/assets/882aaa1b-c6ef-4b3d-9a9a-a0296c7e66c5">
+
 
 
