@@ -14,27 +14,13 @@ Creating a Student grade Tracker in python involves developing a program that ca
 
 Key Activities
 
-1.Requirements gathering:
+get_student_data(): Prompts the user to enter the student's name, roll number, and marks for five subjects. It returns this information as a tuple.
 
-Define the features and functionalities needed such as tracking grades
+calculate_performance(): Takes the list of marks, calculates the total and average, and assigns a grade based on the average.
 
-2.Design:
+display_results(): Outputs the student's name, roll number, marks, total, average, and grade in a readable format.
 
-Database Schema Design:Outline how to store data about students,courses,grades and users
-
-Architecture Design:
-
-choose a suitable architecture
-
-Technologies used
-
-1.Front end technologies:
-
-While Python primarily handles backend tasks,FrameWorks like Bootstrap can help with styling,libraries like modern frame works
-
-2.Testing:
-
-unittest or pytest:Frameworks for writing and running tests to ensure code readability
+main(): The main loop that allows the user to input data for multiple students. After displaying the results for one student, it asks if the user wants to enter details for another student. If the user types 'yes', it repeats; otherwise, it exits.
 
 
 
