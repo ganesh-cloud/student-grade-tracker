@@ -20,8 +20,6 @@ calculate_performance(): Takes the list of marks, calculates the total and avera
 
 display_results(): Outputs the student's name, roll number, marks, total, average, and grade in a readable format.
 
-main(): The main loop that allows the user to input data for multiple students. After displaying the results for one student, it asks if the user wants to enter details for another student. If the user types 'yes', it repeats; otherwise, it exits.
-
 
 
 
