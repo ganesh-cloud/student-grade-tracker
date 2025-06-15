@@ -1,32 +1,53 @@
-#program to student grade tracker
+def get_student_data():
+    """Collects student details and grades."""
+    name = input("Enter student's name: ")
+    roll_no = input("Enter roll number: ")
+    marks = []
+    for i in range(1, 6):
+        mark = float(input(f"Enter marks for subject {i}: "))
+        marks.append(mark)
+    return name, roll_no, marks
 
-print("Enter Marks Obtained in 5 Subjects: ")
-total1 = 44
-total2 = 67
-total3 = 76
-total4 = 99
-total5 = 58
- 
-tot = total1 + total2 + total3 + total4 + total5
-avg = tot / 5
- 
-if avg >= 91 and avg <= 100:
-    print("Your Grade is A1")
-elif avg >= 81 and avg < 91:
-    print("Your Grade is A2")
-elif avg >= 71 and avg < 81:
-    print("Your Grade is B1")
-elif avg >= 61 and avg < 71:
-    print("Your Grade is B2")
-elif avg >= 51 and avg < 61:
-    print("Your Grade is C1")
-elif avg >= 41 and avg < 51:
-    print("Your Grade is C2")
-elif avg >= 33 and avg < 41:
-    print("Your Grade is D")
-elif avg >= 21 and avg < 33:
-    print("Your Grade is E1")
-elif avg >= 0 and avg < 21:
-    print("Your Grade is E2")
-else:
-    print("Invalid Input!")
+def calculate_performance(marks):
+    """Calculates total, average, and assigns a grade."""
+    total = sum(marks)
+    average = total / len(marks)
+    if average >= 90:
+        grade = 'A+'
+    elif average >= 80:
+        grade = 'A'
+    elif average >= 70:
+        grade = 'B+'
+    elif average >= 60:
+        grade = 'B'
+    elif average >= 50:
+        grade = 'C'
+    elif average >= 40:
+        grade = 'D'
+    else:
+        grade = 'F'
+    return total, average, grade
+
+def display_results(name, roll_no, marks, total, average, grade):
+    """Displays the student's performance results."""
+    print("\n--- Student Performance ---")
+    print(f"Name: {name}")
+    print(f"Roll No: {roll_no}")
+    print(f"Marks: {marks}")
+    print(f"Total Marks: {total}")
+    print(f"Average Marks: {average:.2f}")
+    print(f"Grade: {grade}")
+
+def main():
+    """Main function to drive the program."""
+    while True:
+        name, roll_no, marks = get_student_data()
+        total, average, grade = calculate_performance(marks)
+        display_results(name, roll_no, marks, total, average, grade)
+        cont = input("\nDo you want to enter details for another student? (yes/no): ").strip().lower()
+        if cont != 'yes':
+            print("Exiting the program.")
+            break
+
+if __name__ == "__main__":
+    main()
