@@ -21,6 +21,10 @@ calculate_performance(): Takes the list of marks, calculates the total and avera
 display_results(): Outputs the student's name, roll number, marks, total, average, and grade in a readable format.
 
 
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/d4c8c97a-7f12-409f-a7aa-8e85cffb32ed" />
+
+
+
 
 
 
