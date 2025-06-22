@@ -11,6 +11,7 @@ def generate_id_cards(students):
         print(f"Blood Group: {student['blood_group']}")
         print("***************************\n")
 a=int(input("Enter how many students id cards do you want to generate?"))
+students=[]
 for i in range(a):
     while True:
     
@@ -25,10 +26,14 @@ for i in range(a):
         
         confirm =input("Are these details are correct? (yes/no)").strip().lower()
         if confirm=="yes":
-            generate_id_cards(students)
-            break
+             generate_id_cards(students)
+             break
+        elif confirm =="no":
+            print("Re enter details.\n")
         else:
             print("re enter details")
+        
+        
         
         
         
