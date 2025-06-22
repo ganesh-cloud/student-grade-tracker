@@ -7,21 +7,20 @@ Mentor:Neela Santhosh Kumar
 
 Overview of the project
 
-project:Student Grade Tracker
+project:Students id card generator
 
 Objective:
-Creating a Student grade Tracker in python involves developing a program that can store,manage,and display the student grades
+Creating the students id cards in python by taking user inputs and displaying in formatted and readable manner 
 
 Key Activities
 
-get_student_data(): Prompts the user to enter the student's name, roll number, and marks for five subjects. It returns this information as a tuple.
+Here i used the function and that is 
+ generate_id_cards(students): 
+                            the use of function is to keep the code clean and reusable and function is used to modularize code and handles task of printing student id cards
 
-calculate_performance(): Takes the list of marks, calculates the total and average, and assigns a grade based on the average.
+ here i used for loop to repeat input process for each student depending up on number of id cards required 
+ here i used while loop to keep asking for student details until user confirms details are correct
 
-display_results(): Outputs the student's name, roll number, marks, total, average, and grade in a readable format.
-
-
-<img width="960" alt="image" src="https://github.com/user-attachments/assets/d4c8c97a-7f12-409f-a7aa-8e85cffb32ed" />
 
 
 
