@@ -12,6 +12,7 @@ def generate_id_cards(students):
         print("***************************\n")
 a=int(input("Enter how many students id cards do you want to generate?"))
 for i in range(a):
+    while True:
     
         print(f"\n Enter details for student{i+1}")
         name=input("Enter name:")
@@ -22,10 +23,12 @@ for i in range(a):
         
 
         
-        confirm =input("Are these details are correct? (yes/no)").lower()
+        confirm =input("Are these details are correct? (yes/no)").strip().lower()
         if confirm=="yes":
             generate_id_cards(students)
             break
         else:
             print("re enter details")
+        
+        
         
